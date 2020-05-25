@@ -25,7 +25,7 @@ func TestMakeSignatureString(t *testing.T) {
 }
 
 func TestMakeSignatureToken(t *testing.T) {
-	rs, err := MakeSignatureToken(token, data)
+	rs, err := MakeSignatureToken("token", data)
 
 	assert.Nil(t, err)
 	assert.NotEqual(t, rs, "")
